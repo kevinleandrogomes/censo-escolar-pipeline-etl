@@ -9,7 +9,7 @@ Este projeto automatiza a extração e o processamento de grandes volumes de dad
 * **Conteinerização:** Docker e Docker Compose para isolamento total do ambiente.
 * **Armazenamento:** PostgreSQL como Data Warehouse.
 * **Visualização:** Metabase para criação de dashboards estratégicos.
-  [![Metabase](https://img.shields.io/badge/Metabase-509EE3?style=for-the-badge&logo=Metabase&logoColor=white)](https://www.metabase.com/)
+  
 ## 📈 Métricas Processadas
 O pipeline calcula automaticamente **indicadores-chave**, com foco em:
 * **Infraestrutura Tecnológica**: Acesso a internet banda larga, Wi-Fi e disponibilidade de tablets/computadores.
