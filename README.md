@@ -9,7 +9,6 @@ Este projeto automatiza a extração e o processamento de grandes volumes de dad
 * **Conteinerização:** Docker e Docker Compose para isolamento total do ambiente.
 * **Armazenamento:** PostgreSQL como Data Warehouse.
 * **Visualização:** Metabase para dashboards estratégicos.
-  [![Metabase](https://img.shields.io/badge/Metabase-509EE3?style=for-the-badge&logo=Metabase&logoColor=white)](https://www.metabase.com/)
 
 ## 🖼️ Visualização do Pipeline e Dashboards
 Abaixo, a evidência do pipeline orquestrado no Airflow e os resultados analíticos processados:
@@ -23,7 +22,7 @@ Abaixo, a evidência do pipeline orquestrado no Airflow e os resultados analíti
 *Métricas de infraestrutura, saneamento e situação de funcionamento das escolas.*
 
 ## 📈 Métricas Processadas
-O pipeline calcula automaticamente **16 indicadores-chave**, com destaque para:
+O pipeline calcula automaticamente **indicadores-chave**, com destaque para:
 * **Saneamento e Saúde:** Percentual de escolas sem esgoto e acesso a água potável.
 * **Infraestrutura:** Quantidade total de escolas e situação de funcionamento (ativa/paralisada).
 * **Gestão:** Distribuição de escolas por dependência administrativa (Pública vs. Privada).
