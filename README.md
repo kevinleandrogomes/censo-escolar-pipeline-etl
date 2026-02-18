@@ -8,14 +8,25 @@ Este projeto automatiza a extração e o processamento de grandes volumes de dad
 * **Orquestração:** Apache Airflow gerindo o workflow de dados.
 * **Conteinerização:** Docker e Docker Compose para isolamento total do ambiente.
 * **Armazenamento:** PostgreSQL como Data Warehouse.
-* **Visualização:** Metabase para criação de dashboards estratégicos.
-  
+* **Visualização:** Metabase para dashboards estratégicos.
+  [![Metabase](https://img.shields.io/badge/Metabase-509EE3?style=for-the-badge&logo=Metabase&logoColor=white)](https://www.metabase.com/)
+
+## 🖼️ Visualização do Pipeline e Dashboards
+Abaixo, a evidência do pipeline orquestrado no Airflow e os resultados analíticos processados:
+
+### Orquestração (Airflow)
+![DAG Airflow](img/airflow_dag.png)
+*Visualização do workflow automatizado garantindo o fluxo entre Extração, Transformação e Carga (ETL).*
+
+### Dashboards Estratégicos (Metabase)
+![Dashboard Geral](img/dashboard_metabase.png)
+*Métricas de infraestrutura, saneamento e situação de funcionamento das escolas.*
+
 ## 📈 Métricas Processadas
-O pipeline calcula automaticamente **indicadores-chave**, com foco em:
-* **Infraestrutura Tecnológica**: Acesso a internet banda larga, Wi-Fi e disponibilidade de tablets/computadores.
-* **Acessibilidade (PCD)**: Escolas com dependências acessíveis e banheiros adaptados.
-* **Recursos Humanos**: Nível de qualificação e formação docente.
-* **Espaços de Aprendizado**: Presença de laboratórios de informática, ciências e bibliotecas.
+O pipeline calcula automaticamente **16 indicadores-chave**, com destaque para:
+* **Saneamento e Saúde:** Percentual de escolas sem esgoto e acesso a água potável.
+* **Infraestrutura:** Quantidade total de escolas e situação de funcionamento (ativa/paralisada).
+* **Gestão:** Distribuição de escolas por dependência administrativa (Pública vs. Privada).
 
 ## 📁 Sobre os Dados
 Devido ao limite de tamanho do GitHub, o arquivo bruto `censo_escolar_2024.csv` não está incluído neste repositório. 
@@ -24,7 +35,7 @@ Para rodar o pipeline:
 2. Coloque o arquivo `.csv` dentro da pasta `/data` antes de iniciar os containers.
 
 ## 🚀 Como Executar
-1. Certifique-se de ter o Docker instalado.
+1. Certifique-se de ter o Docker instalado e o modo **SVM ativo** na BIOS (para usuários AMD/Aorus).
 2. Clone este repositório.
 3. Execute `docker-compose up -d`.
 4. Acesse o Airflow em `localhost:8080` e o Metabase em `localhost:3000`.
