@@ -23,7 +23,6 @@ Abaixo, os resultados analíticos processados pelo pipeline, divididos por categ
 
 #### 🏛️ Gestão e Acessibilidade
 ![Dependência Administrativa](img/dash_5.png)
-![Métricas Adicionais](img/dash_6.png)
 
 #### ⚙️ Orquestração do Pipeline
 ![DAG Airflow com Sucesso](img/airflow_dag.png)
