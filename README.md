@@ -10,16 +10,23 @@ Este projeto automatiza a extração e o processamento de grandes volumes de dad
 * **Armazenamento:** PostgreSQL como Data Warehouse.
 * **Visualização:** Metabase para dashboards estratégicos.
 
-## 🖼️ Visualização do Pipeline e Dashboards
-Abaixo, a evidência do pipeline orquestrado no Airflow e os resultados analíticos processados:
+## 🖼️ Visualização dos Dashboards (Metabase)
+Abaixo, os resultados analíticos processados pelo pipeline, divididos por categorias de métricas:
 
-### Orquestração (Airflow)
-![DAG Airflow](img/airflow_dag.png)
-*Visualização do workflow automatizado garantindo o fluxo entre Extração, Transformação e Carga (ETL).*
+#### 📊 Visão Geral e Infraestrutura
+![Total de Escolas](img/dash_1.png)
+![Situação de Funcionamento](img/dash_2.png)
 
-### Dashboards Estratégicos (Metabase)
-![Dashboard Geral](img/dashboard_metabase.png)
-*Métricas de infraestrutura, saneamento e situação de funcionamento das escolas.*
+#### 💧 Saneamento e Saúde
+![Acesso a Água Potável](img/dash_3.png)
+![Rede de Esgoto](img/dash_4.png)
+
+#### 🏛️ Gestão e Acessibilidade
+![Dependência Administrativa](img/dash_5.png)
+![Métricas Adicionais](img/dash_6.png)
+
+#### ⚙️ Orquestração do Pipeline
+![DAG Airflow com Sucesso](img/airflow_dag.png)
 
 ## 📈 Métricas Processadas
 O pipeline calcula automaticamente **indicadores-chave**, com destaque para:
